@@ -2263,3 +2263,78 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+
+/* aurnab update */
+/* 
+.price {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+} */
+
+.discount {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.highlight-discount {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: #92fcab;
+  color: rgb(32, 34, 49);
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+/* Original price with strikethrough */
+.original-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-size: 1.0rem;
+  color: #636363;
+}
+
+/* Original price with strikethrough */
+.highlight-original-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-size: 1.0rem;
+  color: #afafaf;
+}
+
+/* Discounted price */
+.highlight-discounted-price {
+  font-size: 1.5rem;
+  /* color: #28a745;   */
+  /* Green color for discounted price */
+  font-weight: bold;
+}
+
+/* Discounted price */
+.discounted-price {
+  font-size: 1.5rem;
+  /* color: #28a745;   */
+  /* Green color for discounted price */
+  font-weight: bold;
+}
+
+.currency {
+  font-size: 1.0rem;
+}
+
+/* For the period text */
+.period {
+  font-size: 1rem;
+  color: #666;
+}
