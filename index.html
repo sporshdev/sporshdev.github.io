@@ -74,7 +74,7 @@
 
               <div class="hero-buttons">
                 <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
-                <a href="#contact" class="btn btn-link mt-2 mt-sm-0 ">
+                <a href="#" onclick="buyClick('Hello!'); return false;" class="btn btn-link mt-2 mt-sm-0 ">
                   <i class="bi bi-telephone me-1"></i>
                   Talk to Us
                 </a>
@@ -1061,8 +1061,11 @@
         whatsappMessageSend("Hello, \nI want to buy the Basic Plan, so can we talk about the next steps.");
       } else if (data === "standard") {
         whatsappMessageSend("Hello, \nI want to buy the Standard Plan, so can we talk about the next steps.");
-      } else {
+      }else if (data === "premium") {
         whatsappMessageSend("Hello, \nI want to buy the Premium Plan, so can we talk about the next steps.");
+      } 
+      else {
+        whatsappMessageSend(data);
       }
     }
     function whatsappFormClick(){
